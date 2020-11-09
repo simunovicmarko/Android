@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Alarmi</string>
+    <string name="btnUrediS">Uredi</string>
+    <string name="btnDodajS">Dodaj</string>
+    <string name="labelTime">Čas</string>
+    <string name="labelRepeat">Ponovi</string>
+    <string name="labelNaziv">Naziv</string>
+    <string name="labelSound">Zvok</string>
+    <string name="labelSnooze">Dremež</string>
+
 </resources>
