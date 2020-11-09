@@ -22,14 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         SlidingUpPanelLayout layout  = findViewById(R.id.layout);
 
-        RelativeLayout oknoAlarm = (RelativeLayout)findViewById(R.id.oknoAlarmID);
 
-        oknoAlarm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                layout.setPanelState(SlidingUpPanelLayout.PanelState.EXPANDED);
-            }
-        });
+
 
 
         layout.addPanelSlideListener(new SlidingUpPanelLayout.PanelSlideListener() {
@@ -45,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+
+    public void odpriPanel(View v){
+        SlidingUpPanelLayout layout  = findViewById(R.id.layout);
+        layout.setPanelState(SlidingUpPanelLayout.PanelState.EXPANDED);
     }
 
 

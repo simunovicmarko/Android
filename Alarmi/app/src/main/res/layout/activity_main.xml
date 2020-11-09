@@ -57,9 +57,17 @@
 
             <include layout="@layout/okno_alarm_relative"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/oknoAlarmID"/>
+                android:layout_height="wrap_content" />
 
+            <include layout="@layout/okno_alarm_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
         </LinearLayout>
 
 
@@ -75,7 +83,7 @@
         android:layout_height="wrap_content">
 
 
-        <include layout="@layout/okno_dodajanje_urejanje" />
+        <include layout="@layout/okno_dodajanje_urejanje"/>
 
 
 
