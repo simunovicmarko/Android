@@ -6,11 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
+
+import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         SlidingUpPanelLayout layout  = findViewById(R.id.layout);
-
-
+        TextView lableCasMain = (TextView)findViewById(R.id.casMainLabel);
+        lableCasMain.setText(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm")).toString());
 
 
 
@@ -46,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         SlidingUpPanelLayout layout  = findViewById(R.id.layout);
         layout.setPanelState(SlidingUpPanelLayout.PanelState.EXPANDED);
     }
-
 
 
 }
