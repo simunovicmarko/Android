@@ -14,25 +14,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="top"
-        >
+        android:gravity="top">
 
         <RelativeLayout
+            android:id="@+id/rlUrediDodaj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:id="@+id/rlUrediDodaj"
-            >
+            android:layout_alignParentTop="true">
 
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                 android:id="@+id/btnUredi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:layout_gravity="start"
                 android:layout_margin="5dp"
                 android:gravity="center"
-                android:layout_alignParentStart="true"
                 android:text="@string/btnUrediS" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -48,20 +46,14 @@
         </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/containerZaAlarme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_below="@id/rlUrediDodaj"
-            >
+            android:orientation="vertical">
 
 
-            <include layout="@layout/okno_alarm_relative"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
-            <include layout="@layout/okno_alarm_relative"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
 
         </LinearLayout>
@@ -70,17 +62,12 @@
     </RelativeLayout>
 
 
-
-
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
-        <include layout="@layout/okno_dodajanje_urejanje"/>
-
+        <include layout="@layout/okno_dodajanje_urejanje" />
 
 
     </RelativeLayout>

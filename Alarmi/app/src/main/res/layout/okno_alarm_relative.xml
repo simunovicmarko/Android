@@ -19,6 +19,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tvCas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|start"
@@ -27,6 +28,7 @@
             android:textSize="40dp" />
 
         <TextView
+            android:id="@+id/tvIme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
@@ -38,7 +40,8 @@
 
 
 
-    <androidx.appcompat.widget.SwitchCompat
+    <Switch
+        android:id="@+id/switchCompatStanje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
