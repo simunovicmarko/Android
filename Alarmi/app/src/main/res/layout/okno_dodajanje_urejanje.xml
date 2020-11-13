@@ -1,99 +1,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_alignParentStart="true"
-            android:text="@string/labelTime"
             android:layout_margin="20dp"
-            android:textSize="40dp"/>
+            android:gravity="center"
+            android:text="@string/labelTime"
+            android:textSize="40dp" />
 
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:orientation="horizontal">-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="20dp">
+<!--            <EditText-->
+<!--                android:id="@+id/Ure"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="number"-->
+<!--                android:text="05"-->
+<!--                android:textSize="50dp" />-->
 
-            <EditText
-                android:id="@+id/Ure"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="05"
-                android:textSize="50dp"
-                android:inputType="number"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=":"-->
+<!--                android:textSize="50dp" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=":"
-                android:textSize="50dp"/>
-
-            <EditText
-                android:id="@+id/Minute"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="45"
-                android:textSize="50dp"
-                android:inputType="number"/>
+<!--            <EditText-->
+<!--                android:id="@+id/Minute"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="number"-->
+<!--                android:text="45"-->
+<!--                android:textSize="50dp" />-->
 
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textSize="50sp"/>
+
+                </LinearLayout>
 
     </RelativeLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        >
+        android:gravity="end">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:layout_gravity="start|center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:padding="5dp"
             android:text="@string/labelRepeat"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:textSize="40dp"
-            android:layout_weight="1"/>
+            android:textSize="40dp" />
 
         <TextView
-            android:id="@+id/nikoli"
+            android:id="@+id/nikoliLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|end"
-            android:gravity="center"
             android:layout_margin="20dp"
-            android:text="Nikoli"
-            android:textSize="20dp"
-            android:layout_weight="1"/>
-
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text=">"
-            android:textSize="20dp" />
-
+            android:text="NikoliTODO"
+            android:textSize="30sp" />
 
 
     </LinearLayout>
@@ -101,39 +103,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        >
+        android:gravity="end">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:layout_gravity="start|center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:padding="5dp"
             android:text="@string/labelNaziv"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:textSize="40dp"
-            android:layout_weight="1"/>
+            android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/labelIme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|end"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            android:text="Ime"
-            android:textSize="20dp"
-            android:layout_weight="1"/>
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text=">"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/EditTextIme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_gravity="center|end"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Alarm"
+                android:textSize="30sp" />
+
+
 
 
 
@@ -142,40 +140,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        >
+        android:gravity="end">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:layout_gravity="start|center"
-            android:text="@string/labelSound"
             android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="start"
             android:padding="5dp"
-            android:textSize="40dp"
-            android:layout_weight="1"/>
+            android:text="@string/labelSound"
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/labelZvok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|end"
-            android:gravity="center"
             android:layout_margin="20dp"
-            android:text="Zvok"
-            android:textSize="20dp"
-            android:layout_weight="1"/>
-
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text=">"
             android:layout_weight="1"
-            android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="20dp" />
-
+            android:text="SoundTODO"
+            android:textSize="30sp" />
 
 
     </LinearLayout>
@@ -183,31 +170,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        >
+        android:gravity="end">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:layout_gravity="start|center"
-            android:text="@string/labelSnooze"
             android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="start"
             android:padding="5dp"
-            android:textSize="40dp"
-            android:layout_weight="1"/>
+            android:text="@string/labelSnooze"
+            android:textSize="40dp" />
 
-        +
+
 
         <Switch
+            android:id="@+id/switchDremez"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:padding="10dp"
-            />
-
+            android:layout_weight="1"
+            android:padding="10dp" />
 
 
     </LinearLayout>
@@ -217,12 +202,9 @@
         android:id="@+id/ShraniBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shrani"
         android:layout_gravity="center|bottom"
         android:onClick="dodajAlarm"
-        />
-
-
+        android:text="Shrani" />
 
 
 </LinearLayout>

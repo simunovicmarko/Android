@@ -40,31 +40,35 @@
                 android:layout_alignParentEnd="true"
                 android:layout_margin="5dp"
                 android:gravity="center"
+                android:onClick="dodajAlarm"
 
                 android:text="@string/btnDodajS" />
 
         </RelativeLayout>
 
-        <LinearLayout
-            android:id="@+id/containerZaAlarme"
-            android:layout_width="match_parent"
+        <ScrollView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/rlUrediDodaj"
-            android:orientation="vertical">
+            >
+
+            <LinearLayout
+                android:id="@+id/containerZaAlarme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
-
-
-
-        </LinearLayout>
-
+            </LinearLayout>
+        </ScrollView>
 
     </RelativeLayout>
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
 
         <include layout="@layout/okno_dodajanje_urejanje" />

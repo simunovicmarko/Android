@@ -6,27 +6,36 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Alarm {
-    private int ura, minuta;
+    //private int ura, minuta;
+    private String cas;
     private int[] dneviVTednu;
     private String naziv;
     private String zvok;
     private Boolean snooze;
 
-    public int getUra() {
-        return ura;
+//    public int getUra() {
+//        return ura;
+//    }
+//
+
+    public String getCas() {
+        return cas;
     }
 
-    public void setUra(int ura) {
-        this.ura = ura;
+    public void setCas(String cas) {
+        this.cas = cas;
     }
-
-    public int getMinuta() {
-        return minuta;
-    }
-
-    public void setMinuta(int minuta) {
-        this.minuta = minuta;
-    }
+//    public void setUra(int ura) {
+//        this.ura = ura;
+//    }
+//
+//    public int getMinuta() {
+//        return minuta;
+//    }
+//
+//    public void setMinuta(int minuta) {
+//        this.minuta = minuta;
+//    }
 
     public int[] getDneviVTednu() {
         return dneviVTednu;
@@ -60,19 +69,28 @@ public class Alarm {
         this.snooze = snooze;
     }
 
-
-    public Alarm(int ura,int minuta, int[] dneviVTednu, String naziv, String zvok, Boolean snooze) {
-        this.ura = ura;
-        this.minuta = minuta;
+    public Alarm(String cas, int[] dneviVTednu, String naziv, String zvok, Boolean snooze) {
+        this.cas = cas;
         this.dneviVTednu = dneviVTednu;
         this.naziv = naziv;
         this.zvok = zvok;
         this.snooze = snooze;
     }
 
-    public Alarm(){
-        this.ura =  Integer.parseInt(LocalTime.now().format(DateTimeFormatter.ofPattern("HH")));
-        this.minuta =  Integer.parseInt(LocalTime.now().format(DateTimeFormatter.ofPattern("mm")));
+
+//    public Alarm(int ura, int minuta, int[] dneviVTednu, String naziv, String zvok, Boolean snooze) {
+//        this.ura = ura;
+//        this.minuta = minuta;
+//        this.dneviVTednu = dneviVTednu;
+//        this.naziv = naziv;
+//        this.zvok = zvok;
+//        this.snooze = snooze;
+//    }
+
+    public Alarm() {
+//        this.ura = Integer.parseInt(LocalTime.now().format(DateTimeFormatter.ofPattern("HH")));
+//        this.minuta = Integer.parseInt(LocalTime.now().format(DateTimeFormatter.ofPattern("mm")));
+        this.cas = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm"));
         dneviVTednu = null;
         naziv = "Alarm";
         zvok = null;
